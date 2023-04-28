@@ -11,6 +11,10 @@
   border: 4px solid $color-default-white;
   user-select: none;
 
+  @include vp-767 {
+    padding: 20px 10px;
+  }
+
   &:active {
     opacity: 70%;
   }
