@@ -759,6 +759,61 @@ button,
   color: #15ab07;
 }
 
+.description__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 85px;
+  margin: 0 auto;
+  padding: 120px 0 235px 0;
+  max-width: 1160px;
+}
+
+.description__content-wrapper {
+  padding: 39px 0 0 60px;
+  max-width: 415px;
+}
+
+.description__title-area {
+  margin: 0 0 39px 0;
+}
+
+.description__content-wrapper h2 {
+  margin: 0 0 7px 0;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 57.6px;
+  letter-spacing: 1.5px;
+}
+
+.description__title-area p {
+  margin: 0 0 45px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.2px;
+}
+
+.description__content-wrapper p {
+  margin: 0 0 8px 0;
+  font-weight: 300;
+}
+
+.description__graphic-wrapper {
+  position: relative;
+}
+
+.description__video-wrapper {
+  position: absolute;
+  bottom: -115px;
+  left: -63px;
+}
+
+.description__video-wrapper button {
+  display: none;
+}
+
 .intro {
   min-height: 658px;
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
