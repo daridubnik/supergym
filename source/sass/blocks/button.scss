@@ -15,14 +15,12 @@
     padding: 20px 10px;
   }
 
-  &:active {
-    opacity: 70%;
-  }
-}
-
-.button__primary {
   @include hover {
     box-shadow: 0 0 10px 1px $color-default-white;
     text-shadow: 0 0 10px $color-default-white;
+  }
+
+  &:active {
+    opacity: 70%;
   }
 }
