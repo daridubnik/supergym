@@ -65,25 +65,29 @@
         <div class="container">
           <div class="description__wrapper">
             <div class="description__content-wrapper">
-              <div class="description__title-area">
-                <h2>Тренажерный зал</h2>
-                <p>Просторный зал площадью 900&nbsp;кв/м</p>
-              </div>
-              <p>Supergym – самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления
-                тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех
-                спортсменов.</p>
-              <div class="description__desktop-content">
-                <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами.
-                  Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
-                </p>
+              <h2>Тренажерный зал</h2>
+              <p>Просторный зал площадью 900&nbsp;кв/м</p>
+              <div class="description__text-wrapper">
+                <p>Supergym – самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления
+                  тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех
+                  спортсменов.</p>
+                <div class="description__text-desktop">
+                  <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами.
+                    Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+                  </p>
+                </div>
               </div>
             </div>
             <div class="description__graphic-wrapper">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="./img/content/description-image-mobile.webp, ./img/content/description-image-mobile@2x.webp 2x">
                 <source type="image/webp" media="(max-width: 1199px)"
                   srcset="./img/content/description-image-tablet.webp, ./img/content/description-image-tablet@2x.webp 2x">
                 <source type="image/webp"
                   srcset="./img/content/description-image-desktop.webp, ./img/content/description-image-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="./img/content/description-image-mobile.jpg, ./img/content/description-image-mobile@2x.jpg 2x">
                 <source media="(max-width: 1199px)"
                   srcset="./img/content/description-image-tablet.jpg, ./img/content/description-image-tablet@2x.jpg 2x">
                 <img src="./img/content/description-image-desktop.jpg"
@@ -92,10 +96,15 @@
               </picture>
               <div class="description__video-wrapper">
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/content/description-cover-mobile.webp, ./img/content/description-cover-mobile@2x.webp 2x">
                   <source type="image/webp"
-                    srcset="./img/content/description-cover.webp, ./img/content/description-cover@2x.webp 2x">
-                  <img src="./img/content/description-cover.jpg" srcset="./img/content/description-cover@2x.jpg 2x"
-                    width="364" height="228" alt="Обложка видео-обзора тренажерного зала">
+                    srcset="./img/content/description-cover-desktop.webp, ./img/content/description-cover-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/content/description-cover-mobile.jpg, ./img/content/description-cover-mobile@2x.jpg 2x">
+                  <img src="./img/content/description-cover-desktop.jpg"
+                    srcset="./img/content/description-cover-desktop@2x.jpg 2x" width="364" height="228"
+                    alt="Обложка видео-обзора тренажерного зала">
                 </picture>
                 <button type="button" aria-label="Воспроизвести видео."></button>
               </div>
