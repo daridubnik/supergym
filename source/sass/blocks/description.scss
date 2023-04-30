@@ -1,0 +1,265 @@
+.description__wrapper {
+  display: flex;
+  gap: 85px;
+  margin: 0 auto;
+  padding: 120px 0;
+  max-width: 1160px;
+
+  @include vp-1199 {
+    flex-direction: column;
+    gap: 36px;
+    align-items: center;
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    gap: 25px;
+    align-items: flex-start;
+    padding: 64px 0 70px 0;
+  }
+}
+
+.description__content-wrapper {
+  padding: 39px 0 0 60px;
+  max-width: 415px;
+
+  @include vp-1199 {
+    padding: 0;
+    max-width: 900px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    text-align: left;
+  }
+}
+
+.description__content-wrapper h2 {
+  margin: 0 0 7px 0;
+  font-family: $ff-alumni-sans;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 57.6px;
+  letter-spacing: 1.5px;
+
+  @include vp-1199 {
+    margin: 0 15px -1px 0;
+    font-size: 42px;
+    line-height: 51px;
+    letter-spacing: 1.4px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 4px 0;
+    font-size: 32px;
+    line-height: 38.4px;
+    letter-spacing: 1px;
+  }
+}
+
+.description__content-wrapper p {
+  margin: 0 0 39px 0;
+  font-size: 18px;
+  line-height: 27px;
+
+  @include vp-1199 {
+    margin: 0 0 33px 0;
+  }
+
+  @include vp-767 {
+    margin: 0 0 24px 0;
+  }
+}
+
+.description__text-wrapper p {
+  margin: 0 auto 8px auto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+
+  @include vp-1199 {
+    max-width: 502px;
+  }
+
+  @media (min-width: 880px) and (max-width: 1199px) {
+    max-width: 768px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 8px 0;
+    max-width: 258px;
+  }
+
+  @media (min-width: 330px) and (max-width: 767px) {
+    max-width: 100%;
+  }
+}
+
+.description__text-desktop {
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.description__graphic-wrapper {
+  position: relative;
+  padding: 0 0 115px 0;
+
+  @include vp-1199 {
+    padding: 0 0 110px 0;
+    width: 100%;
+  }
+
+  @include vp-767 {
+    margin: 0 0 0 -15px;
+    padding: 0;
+    width: 100vw;
+  }
+}
+
+.description__image-wrapper img {
+  height: 401px;
+  object-fit: cover;
+
+  @include vp-1199 {
+    margin: 0 auto;
+    width: 678px;
+    height: 345px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 41px 0;
+    width: 100%;
+    height: auto;
+    max-height: 460px;
+    object-fit: cover;
+  }
+}
+
+.description__video-wrapper {
+  position: absolute;
+  top: 288px;
+  left: -63px;
+  width: 364px;
+  height: 228px;
+
+  @include vp-1199 {
+    top: 261px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 266px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: translateX(0);
+  }
+}
+
+.description__video-wrapper img {
+  @include vp-767 {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.description__video-player {
+  width: 100%;
+  height: 100%;
+
+  @include vp-767 {
+    aspect-ratio: 320/167;
+  }
+}
+
+.description__video-wrapper button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  border: none;
+  border-radius: 50%;
+  background: $button-gradient;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 39%;
+    left: 45%;
+    width: 17px;
+    height: 17px;
+    background-image: url("../../img/svg/triangle-desktop.svg");
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    transform: translate(-14%, -14%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    inset: 0;
+    background: $button-border-gradient;
+    border: 2px solid transparent;
+    mask: $mask-gradient padding-box, $mask-gradient;
+    mask-composite: exclude;
+  }
+
+  @include hover {
+    width: 78px;
+    height: 78px;
+
+    &::after {
+      width: 106px;
+      height: 106px;
+    }
+  }
+
+  &:active {
+    background: $color-carmine;
+  }
+
+  @include vp-1199 {
+    width: 52px;
+    height: 52px;
+
+    &::before {
+      top: 37%;
+      left: 42%;
+      width: 12px;
+      height: 12px;
+      background-image: url("../../img/svg/triangle-tablet.svg");
+    }
+
+    &::after {
+      width: 73px;
+      height: 73px;
+    }
+
+    @include hover {
+      width: 58px;
+      height: 58px;
+
+      &::after {
+        width: 79px;
+        height: 79px;
+      }
+    }
+  }
+
+  @include vp-767 {
+    &::before {
+      left: 46%;
+    }
+  }
+}
