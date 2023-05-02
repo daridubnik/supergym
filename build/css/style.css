@@ -1436,6 +1436,12 @@ button,
   background-color: #f8f9fc;
 }
 
+@media (max-width: 767px) {
+  .membership .container {
+    padding: 0;
+  }
+}
+
 .membership__wrapper {
   margin: 0 auto;
   padding: 120px 0;
@@ -1444,6 +1450,11 @@ button,
 @media (max-width: 1199px) {
   .membership__wrapper {
     padding: 100px 0;
+  }
+}
+@media (max-width: 767px) {
+  .membership__wrapper {
+    padding: 63px 0 69px 0;
   }
 }
 
@@ -1458,10 +1469,19 @@ button,
 }
 @media (max-width: 1199px) {
   .membership__wrapper h2 {
-    margin: 0 14px 10px 0;
+    margin: 0 5px 7px 0;
     font-size: 42px;
     line-height: 50.4px;
     letter-spacing: 1.3px;
+  }
+}
+@media (max-width: 767px) {
+  .membership__wrapper h2 {
+    margin: 0 11px 11px 0;
+    padding: 0 15px;
+    font-size: 32px;
+    line-height: 38.4px;
+    letter-spacing: 1px;
   }
 }
 
@@ -1491,6 +1511,11 @@ button,
     margin: 0 auto 45px auto;
   }
 }
+@media (max-width: 767px) {
+  .membership__controls {
+    margin: 0 auto 34px auto;
+  }
+}
 
 .membership__controls button {
   position: relative;
@@ -1509,6 +1534,13 @@ button,
     padding: 10px 20px 13px 20px;
     font-size: 18px;
     line-height: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .membership__controls button {
+    padding: 10px 15px 14px 15px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 .membership__controls button::before {
@@ -1587,6 +1619,12 @@ button,
     width: 100%;
   }
 }
+@media (max-width: 767px) {
+  .membership__wrapper ul {
+    padding: 0 15px;
+    gap: 35px;
+  }
+}
 
 .membership__item {
   display: -webkit-box;
@@ -1605,13 +1643,16 @@ button,
   background-color: #ffffff;
   z-index: 1;
 }
-@media (hover: hover) {
-  .membership__item:hover:not(.focus-visible) {
-    border: 7px solid transparent;
-    -o-border-image: -o-linear-gradient(309deg, #d10a42 22%, #103aae 74%);
-       border-image: linear-gradient(141deg, #d10a42 22%, #103aae 74%);
-    border-image-slice: 7;
-    outline: 0;
+.membership__item:hover, .membership__item:focus-within {
+  border: 7px solid transparent;
+  -o-border-image: -o-linear-gradient(309deg, #d10a42 22%, #103aae 74%);
+     border-image: linear-gradient(141deg, #d10a42 22%, #103aae 74%);
+  border-image-slice: 7;
+  outline: 0;
+}
+@media (max-width: 767px) {
+  .membership__item {
+    padding: 43px 20px 49px 20px;
   }
 }
 
@@ -1621,10 +1662,22 @@ button,
   font-size: 26px;
   line-height: 39.6px;
 }
+@media (max-width: 767px) {
+  .membership__item h3 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    line-height: 24.23px;
+  }
+}
 
 .membership__item p {
   margin: 0 0 66px 0;
   color: #495a7d;
+}
+@media (max-width: 767px) {
+  .membership__item p {
+    margin: 0 0 55px 0;
+  }
 }
 
 .membership__price {
@@ -1657,11 +1710,27 @@ button,
   opacity: 48%;
   z-index: -1;
 }
+@media (max-width: 767px) {
+  .membership__price p {
+    font-size: 48px;
+    line-height: 72px;
+  }
+  .membership__price p::before {
+    top: 16px;
+    font-size: 80px;
+    line-height: 120px;
+  }
+}
 
 .membership__price span {
   margin: 0 0 0 10px;
   font-weight: 400;
   color: #102654;
+}
+@media (max-width: 767px) {
+  .membership__price span {
+    margin: 0 0 0 7px;
+  }
 }
 
 .membership__item a {
@@ -1681,8 +1750,15 @@ button,
     max-width: 100%;
   }
 }
+@media (max-width: 767px) {
+  .membership__item a {
+    margin: 31px 0 0 0;
+    width: 86%;
+  }
+}
 
-.membership__item:hover a {
+.membership__item:hover a,
+.membership__item:focus a {
   background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   color: #ffffff;
@@ -1690,7 +1766,8 @@ button,
           box-shadow: none;
 }
 @media (hover: hover) {
-  .membership__item:hover a:hover:not(.focus-visible) {
+  .membership__item:hover a:hover:not(.focus-visible),
+.membership__item:focus a:hover:not(.focus-visible) {
     -webkit-box-shadow: 0 0 10px 1px #103aae;
             box-shadow: 0 0 10px 1px #103aae;
   }
@@ -1705,6 +1782,11 @@ button,
           transform: translateX(-50%);
   width: 100%;
   max-width: 1366px;
+}
+@media (max-width: 767px) {
+  .membership__image-wrapper {
+    display: none;
+  }
 }
 
 .membership img {
