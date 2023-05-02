@@ -9,7 +9,7 @@
     flex-direction: column;
     gap: 36px;
     align-items: center;
-    padding: 100px 0;
+    padding: 100px 0 73px 0;
   }
 
   @include vp-767 {
@@ -226,7 +226,7 @@
   }
 
   &:active {
-    background: $color-carmine;
+    background: $color-crimson;
   }
 
   @include vp-1199 {
