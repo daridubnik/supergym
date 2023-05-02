@@ -7,6 +7,10 @@
   margin: 0 auto;
   padding: 120px 0;
   max-width: 1160px;
+
+  @include vp-1199 {
+    padding: 100px 0;
+  }
 }
 
 .membership__wrapper h2 {
@@ -17,6 +21,13 @@
   line-height: 64.8px;
   letter-spacing: 1.6px;
   text-align: center;
+
+  @include vp-1199 {
+    margin: 0 14px 10px 0;
+    font-size: 42px;
+    line-height: 50.4px;
+    letter-spacing: 1.3px;
+  }
 }
 
 .membership__controls {
@@ -35,6 +46,11 @@
     height: 2px;
     background-color: $color-grey-opacity-20;
   }
+
+  @include vp-1199 {
+    gap: 15px;
+    margin: 0 auto 45px auto;
+  }
 }
 
 .membership__controls button {
@@ -48,6 +64,12 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @include vp-1199 {
+    padding: 10px 20px 13px 20px;
+    font-size: 18px;
+    line-height: 27px;
+  }
 
   &::before {
     content: "";
@@ -88,18 +110,31 @@
     height: 100%;
     background-color: $color-default-white;
   }
+
+  @include vp-1199 {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .membership__wrapper ul {
   display: grid;
   grid-template-columns: repeat(3, minmax(310px, 360px));
-  gap: 30px;
+  gap: 40px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 
-  @media (min-width: 1218px) {
-    gap: 40px;
+  @media (min-width: 1200px) and (max-width: 1218px) {
+    gap: 30px;
+  }
+
+  @include vp-1199 {
+    grid-template-columns: 100%;
+    justify-content: center;
+    padding: 0 118px;
+    width: 100%;
   }
 }
 
@@ -175,6 +210,12 @@
   color: $color-sapphire;
   border: none;
   box-shadow: 0 0 0 2px $color-sapphire;
+
+  @include vp-1199 {
+    margin: 36px 0 0 0;
+    width: 53%;
+    max-width: 100%;
+  }
 }
 
 .membership__item:hover a {
@@ -200,4 +241,11 @@
   position: absolute;
   bottom: -149px;
   right: -183px;
+
+  @include vp-1199 {
+    bottom: -125px;
+    right: -76px;
+    width: 423px;
+    height: 444px;
+  }
 }
