@@ -10,7 +10,13 @@ $color-default-white:               #ffffff;
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
 $color-sapphire:                    #102654;
-$color-carmine:                     #b1032c;
+$color-sapphire-opacity-50:         rgba(16, 38, 84, 0.5);
+$color-crimson:                     #d10a42;
+$color-ghost-white:                 #f8f9fc;
+$color-grey-opacity-20:             rgba(120, 120, 120, 0.2);
+$color-egyptian-blue:               #103aae;
+$color-chambray:                    #495a7d;
+$color-whisper:                     #e8e8e8;
 
 // Gradient
 
@@ -20,6 +26,8 @@ $main-gradient-mobile:                      conic-gradient(from 171.43deg at 35.
 $button-gradient:                           linear-gradient(35deg, #003d85 30%, #b80027 78%);
 $button-border-gradient:                    linear-gradient(97.05deg, rgba(237, 2, 51, 0.2) 17.6%, rgba(0, 62, 183, 0.2) 95.31%);
 $mask-gradient:                             linear-gradient(#ffffff 0 0);
+$button-buy-gradient:                       linear-gradient(141deg, #d10a42 22%, #103aae 74%);
+$button-buy-gradient-hover:                 linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 
 // Typography
 // ---------------------------------

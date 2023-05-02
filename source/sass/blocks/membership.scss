@@ -1,0 +1,203 @@
+.membership {
+  position: relative;
+  background-color: $color-ghost-white;
+}
+
+.membership__wrapper {
+  margin: 0 auto;
+  padding: 120px 0;
+  max-width: 1160px;
+}
+
+.membership__wrapper h2 {
+  margin: 0 5px 7px 0;
+  font-family: $ff-alumni-sans;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 64.8px;
+  letter-spacing: 1.6px;
+  text-align: center;
+}
+
+.membership__controls {
+  position: relative;
+  display: flex;
+  gap: 6px;
+  margin: 0 auto 39px auto;
+  width: max-content;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 18px;
+    width: calc(100% - 37px);
+    height: 2px;
+    background-color: $color-grey-opacity-20;
+  }
+}
+
+.membership__controls button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px 12px 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-sapphire-opacity-50;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 70%;
+    height: 2px;
+    background-color: $color-crimson;
+    transform: scale(0);
+    transform-origin: center;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    color: $color-crimson;
+  }
+}
+
+.membership__controls button.is-active {
+  color: $color-sapphire;
+
+  &::before {
+    transform: scale(1);
+  }
+}
+
+.membership__lists {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15%;
+    height: 100%;
+    background-color: $color-default-white;
+  }
+}
+
+.membership__wrapper ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(310px, 360px));
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: 1218px) {
+    gap: 40px;
+  }
+}
+
+.membership__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px 62px 20px;
+  border: 7px solid $color-default-white;
+  text-align: center;
+  background-color: $color-default-white;
+  z-index: 1;
+
+  @include hover {
+    border: 7px solid transparent;
+    border-image: $button-buy-gradient;
+    border-image-slice: 7;
+    outline: 0;
+  }
+}
+
+.membership__item h3 {
+  margin: 0 0 4px 0;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39.6px;
+}
+
+.membership__item p {
+  margin: 0 0 66px 0;
+  color: $color-chambray;
+}
+
+.membership__price {
+  flex-grow: 1;
+  position: relative;
+}
+
+.membership__price p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  color: $color-egyptian-blue;
+  z-index: 1;
+
+  &::before {
+    content: attr(data-price);
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 150px;
+    color: $color-whisper;
+    opacity: 48%;
+    z-index: -1;
+  }
+}
+
+.membership__price span {
+  margin: 0 0 0 10px;
+  font-weight: 400;
+  color: $color-sapphire;
+}
+
+.membership__item a {
+  margin: 37px 0 0 0;
+  padding: 24px 10px;
+  width: 100%;
+  max-width: 204px;
+  color: $color-sapphire;
+  border: none;
+  box-shadow: 0 0 0 2px $color-sapphire;
+}
+
+.membership__item:hover a {
+  background: $button-buy-gradient-hover;
+  color: $color-default-white;
+  box-shadow: none;
+
+  @include hover {
+    box-shadow: 0 0 10px 1px $color-egyptian-blue;
+  }
+}
+
+.membership__image-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1366px;
+}
+
+.membership img {
+  position: absolute;
+  bottom: -149px;
+  right: -183px;
+}
