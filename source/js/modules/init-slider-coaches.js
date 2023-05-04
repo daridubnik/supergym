@@ -10,7 +10,7 @@ const initSliderCoaches = () => {
     },
 
     slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 20,
     loop: true,
 
     breakpoints: {
