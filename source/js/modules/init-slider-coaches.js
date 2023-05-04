@@ -9,9 +9,21 @@ const initSliderCoaches = () => {
       prevEl: '.coaches__button--prev',
     },
 
-    slidesPerView: 4,
-    spaceBetween: 40,
+    slidesPerView: 1,
+    spaceBetween: 0,
     loop: true,
+
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+    },
   });
 };
 

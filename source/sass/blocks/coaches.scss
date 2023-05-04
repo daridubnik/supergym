@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding: 57px 0 140px 0;
   max-width: 1160px;
+
+  @include vp-1199 {
+    padding: 50px 0 100px 0;
+  }
 }
 
 .coaches__wrapper h2 {
@@ -12,12 +16,26 @@
   font-size: 54px;
   line-height: 64.8px;
   letter-spacing: 1.7px;
+
+  @include vp-1199 {
+    margin: 0 7px 31px 0;
+    font-size: 42px;
+    line-height: 50.4px;
+    letter-spacing: 1.3px;
+    text-align: center;
+  }
 }
 
 .coaches__wrapper ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.coaches__swiper {
+  @include vp-1199 {
+    margin: 0 56px;
+  }
 }
 
 .coaches__item {
@@ -40,6 +58,10 @@
   font-size: 18px;
   line-height: 27px;
   text-align: center;
+
+  @include vp-1199 {
+    left: 51.5%;
+  }
 }
 
 .coaches__item:hover h3,
@@ -52,6 +74,11 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
+
+  @include vp-1199 {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .coaches__item:hover img,
@@ -85,12 +112,20 @@
   font-size: 18px;
   line-height: 20px;
   text-align: center;
+
+  @include vp-1199 {
+    margin: 0 9px 0 0;
+  }
 }
 
 .coaches__item-overlay p {
   margin: 0 0 33px 0;
   text-align: center;
   color: $color-spindle;
+
+  @include vp-1199 {
+    margin: 0 7px 33px 0;
+  }
 }
 
 .coaches__item-overlay ul {
@@ -131,10 +166,18 @@
   &--prev {
     left: -57px;
     background-image: url("../../img/svg/button-prev.svg");
+
+    @include vp-1199 {
+      left: -1px;
+    }
   }
 
   &--next {
     right: -55px;
     background-image: url("../../img/svg/button-next.svg");
+
+    @include vp-1199 {
+      right: 0;
+    }
   }
 }

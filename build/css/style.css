@@ -1480,6 +1480,11 @@ button,
   padding: 57px 0 140px 0;
   max-width: 1160px;
 }
+@media (max-width: 1199px) {
+  .coaches__wrapper {
+    padding: 50px 0 100px 0;
+  }
+}
 
 .coaches__wrapper h2 {
   margin: 0 0 48px 2px;
@@ -1489,11 +1494,26 @@ button,
   line-height: 64.8px;
   letter-spacing: 1.7px;
 }
+@media (max-width: 1199px) {
+  .coaches__wrapper h2 {
+    margin: 0 7px 31px 0;
+    font-size: 42px;
+    line-height: 50.4px;
+    letter-spacing: 1.3px;
+    text-align: center;
+  }
+}
 
 .coaches__wrapper ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+@media (max-width: 1199px) {
+  .coaches__swiper {
+    margin: 0 56px;
+  }
 }
 
 .coaches__item {
@@ -1519,6 +1539,11 @@ button,
   line-height: 27px;
   text-align: center;
 }
+@media (max-width: 1199px) {
+  .coaches__item h3 {
+    left: 51.5%;
+  }
+}
 
 .coaches__item:hover h3,
 .coaches__item:focus h3 {
@@ -1535,6 +1560,12 @@ button,
   -o-transition: transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+@media (max-width: 1199px) {
+  .coaches__item img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .coaches__item:hover img,
@@ -1579,11 +1610,21 @@ button,
   line-height: 20px;
   text-align: center;
 }
+@media (max-width: 1199px) {
+  .coaches__item-overlay h4 {
+    margin: 0 9px 0 0;
+  }
+}
 
 .coaches__item-overlay p {
   margin: 0 0 33px 0;
   text-align: center;
   color: #b6bdcc;
+}
+@media (max-width: 1199px) {
+  .coaches__item-overlay p {
+    margin: 0 7px 33px 0;
+  }
 }
 
 .coaches__item-overlay ul {
@@ -1624,9 +1665,19 @@ button,
   left: -57px;
   background-image: url("../../img/svg/button-prev.svg");
 }
+@media (max-width: 1199px) {
+  .coaches__button--prev {
+    left: -1px;
+  }
+}
 .coaches__button--next {
   right: -55px;
   background-image: url("../../img/svg/button-next.svg");
+}
+@media (max-width: 1199px) {
+  .coaches__button--next {
+    right: 0;
+  }
 }
 
 .custom-input,
@@ -2825,13 +2876,13 @@ button,
 }
 @media (max-width: 1199px) {
   .promo__wrapper {
-    padding: 100px 40px;
+    padding: 100px 40px 50px 0;
     max-width: 994px;
   }
 }
 @media (max-width: 1023px) {
   .promo__wrapper {
-    padding: 100px 0;
+    padding: 100px 0 50px 0;
   }
 }
 @media (max-width: 767px) {
