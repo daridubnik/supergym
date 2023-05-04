@@ -1,0 +1,140 @@
+.coaches__wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 57px 0 140px 0;
+  max-width: 1160px;
+}
+
+.coaches__wrapper h2 {
+  margin: 0 0 48px 2px;
+  font-family: $ff-alumni-sans;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 64.8px;
+  letter-spacing: 1.7px;
+}
+
+.coaches__wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.coaches__item {
+  position: relative;
+  color: $color-default-white;
+  background-color: $color-spindle;
+  overflow: hidden;
+}
+
+.coaches__item h3 {
+  position: absolute;
+  bottom: 23px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 260px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+}
+
+.coaches__item:hover h3,
+.coaches__item:focus h3 {
+  display: none;
+}
+
+.coaches__item img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.coaches__item:hover img,
+.coaches__item:focus img {
+  transform: scale(1.1);
+}
+
+.coaches__item-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 55px 30px;
+  width: 100%;
+  height: 100%;
+  background-color: $color-sapphire-opacity-90;
+  overflow-y: auto;
+  transform: scale(1.3);
+  opacity: 0;
+  transition: transform 0.5s ease 0s;
+}
+
+.coaches__item:hover .coaches__item-overlay,
+.coaches__item:focus .coaches__item-overlay {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.coaches__item-overlay h4 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.coaches__item-overlay p {
+  margin: 0 0 33px 0;
+  text-align: center;
+  color: $color-spindle;
+}
+
+.coaches__item-overlay ul {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.coaches__item-overlay li {
+  position: relative;
+  margin: 0 0 13px 41px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -16px;
+    width: 6px;
+    height: 6px;
+    background-color: $color-default-white;
+    border-radius: 50%;
+  }
+}
+
+.coaches__item-overlay li:last-child {
+  margin-bottom: 0;
+}
+
+.coaches__button {
+  position: absolute;
+  top: 50%;
+  width: 17px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &--prev {
+    left: -57px;
+    background-image: url("../../img/svg/button-prev.svg");
+  }
+
+  &--next {
+    right: -55px;
+    background-image: url("../../img/svg/button-next.svg");
+  }
+}
