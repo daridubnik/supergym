@@ -1540,11 +1540,20 @@ button,
   color: #ffffff;
   background-color: #b6bdcc;
   overflow: hidden;
+  aspect-ratio: 260/294;
+}
+@media (max-width: 1199px) {
+  .coaches__item {
+    min-width: 268px;
+    min-height: 294px;
+    aspect-ratio: 268/294;
+  }
 }
 @media (max-width: 767px) {
   .coaches__item {
     min-width: 226px;
     min-height: 274px;
+    aspect-ratio: 226/274;
   }
 }
 
@@ -1576,7 +1585,7 @@ button,
 }
 
 .coaches__item img {
-  width: auto;
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1585,17 +1594,6 @@ button,
   -o-transition: transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-}
-@media (max-width: 1199px) {
-  .coaches__item img {
-    width: 100%;
-    height: auto;
-  }
-}
-@media (max-width: 767px) {
-  .coaches__item img {
-    min-height: 274px;
-  }
 }
 
 .coaches__item:hover img,

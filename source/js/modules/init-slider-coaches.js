@@ -1,30 +1,37 @@
-import swiper from '../vendor/swiper';
+const sliderCoaches = document.querySelector('.coaches__swiper');
+const buttonNext = document.querySelector('.coaches__button--next');
+const buttonPrev = document.querySelector('.coaches__button--prev');
 
 const initSliderCoaches = () => {
-  // eslint-disable-next-line
-  new swiper('.coaches__swiper', {
+  if (sliderCoaches) {
+    // eslint-disable-next-line
+    new Swiper(sliderCoaches, {
 
-    navigation: {
-      nextEl: '.coaches__button--next',
-      prevEl: '.coaches__button--prev',
-    },
-
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
-
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
+      navigation: {
+        nextEl: buttonNext,
+        prevEl: buttonPrev,
       },
 
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 40,
+      loop: true,
+
+      breakpoints: {
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
       },
-    },
-  });
+    });
+  }
 };
 
 export {initSliderCoaches};

@@ -59,10 +59,18 @@
   color: $color-default-white;
   background-color: $color-spindle;
   overflow: hidden;
+  aspect-ratio: 260/294;
+
+  @include vp-1199 {
+    min-width: 268px;
+    min-height: 294px;
+    aspect-ratio: 268/294;
+  }
 
   @include vp-767 {
     min-width: 226px;
     min-height: 274px;
+    aspect-ratio: 226/274;
   }
 }
 
@@ -91,19 +99,10 @@
 }
 
 .coaches__item img {
-  width: auto;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
-
-  @include vp-1199 {
-    width: 100%;
-    height: auto;
-  }
-
-  @include vp-767 {
-    min-height: 274px;
-  }
 }
 
 .coaches__item:hover img,
