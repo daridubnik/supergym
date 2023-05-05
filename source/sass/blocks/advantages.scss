@@ -2,13 +2,23 @@
   background-color: $color-ghost-white;
 }
 
+.advantages .container {
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
 .advantages__wrapper {
   margin: 0 auto;
   padding: 97px 0 140px 0;
   max-width: 1040px;
 
   @include vp-1199 {
-    padding: 92px 0 100px 0;
+    padding: 92px 0 94px 0;
+  }
+
+  @include vp-767 {
+    padding: 64px 0;
   }
 }
 
@@ -26,6 +36,14 @@
     font-size: 42px;
     line-height: 50.4px;
     letter-spacing: 1.3px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 35px -17px;
+    padding: 0 30px;
+    font-size: 32px;
+    line-height: 38.4px;
+    letter-spacing: 1px;
   }
 }
 
@@ -57,6 +75,13 @@
     &::after {
       content: none;
     }
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    justify-items: center;
+    text-align: center;
   }
 }
 
@@ -90,6 +115,14 @@
       content: none;
     }
   }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0 34px;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .advantages__item--primary:nth-last-child(-n+2) {
@@ -110,6 +143,10 @@
   @include vp-1199 {
     font-size: 58px;
     line-height: 70px;
+  }
+
+  @include vp-767 {
+    line-height: 71px;
   }
 }
 
@@ -147,6 +184,16 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 22.4px;
+
+  @include vp-767 {
+    margin: 0 auto;
+    max-width: 228px;
+  }
+
+  @media (min-width: 400px) and (max-width: 767px) {
+    max-width: 100%;
+    text-align: center;
+  }
 }
 
 .advantages__item--secondary {
@@ -168,6 +215,15 @@
     width: 65%;
     max-width: 100%;
   }
+
+  @include vp-767 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin: 17px 0 6px 0;
+    padding: 35px 34px 33px 34px;
+    width: 100%;
+    min-height: 239px;
+  }
 }
 
 .advantages__item--secondary p {
@@ -175,6 +231,10 @@
   font-weight: 700;
   font-size: 74px;
   line-height: 80px;
+
+  @include vp-767 {
+    margin: 0 0 0 -4px;
+  }
 }
 
 .advantages__item--secondary span {
@@ -189,6 +249,10 @@
     font-size: 22px;
     line-height: 33px;
   }
+
+  @include vp-767 {
+    margin: -9px 0 8px 0;
+  }
 }
 
 .advantages__item--secondary h3 {
@@ -200,5 +264,13 @@
   @include vp-1199 {
     margin: 0 auto;
     max-width: 215px;
+  }
+
+  @include vp-767 {
+    max-width: 215px;
+  }
+
+  @media (min-width: 400px) and (max-width: 767px) {
+    max-width: 100%;
   }
 }
