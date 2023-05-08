@@ -1,0 +1,150 @@
+.stocks__wrapper {
+  margin: 0 auto;
+  padding: 95px 0 50px 0;
+  max-width: 1160px;
+}
+
+.stocks__wrapper h2 {
+  margin: 0 4px 34px 0;
+  font-family: $ff-alumni-sans;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 64.8px;
+  letter-spacing: 1.7px;
+  text-align: center;
+}
+
+.stocks__wrapper ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 38px 37px;
+  margin: 0 0 0 -2px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.stocks__wrapper li {
+  max-width: 560px;
+}
+
+.stocks__wrapper a {
+  @include hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+
+  &:active {
+    opacity: 50%;
+  }
+}
+
+.stocks__main-offer {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.stocks__main-offer-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 45px 37px 45px;
+  background-color: $color-torch-red;
+  color: $color-default-white;
+}
+
+.stocks__main-offer-content-wrapper h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 43.7px;
+}
+
+.stocks__main-offer-content-wrapper span {
+  display: block;
+  margin: -11px 0 14px 0;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80px;
+}
+
+.stocks__main-offer-content-wrapper p {
+  flex-grow: 1;
+  margin: 0;
+  font-size: 18px;
+  line-height: 25.2px;
+}
+
+.stocks__main-offer-content-wrapper a {
+  position: relative;
+  margin: 0 0 0 -10px;
+  padding: 10px;
+  width: max-content;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.41px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: $color-default-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 1px;
+    background-color: $color-default-white;
+  }
+}
+
+.stocks__main-offer-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.secondary-offer {
+  display: flex;
+  flex-direction: column;
+  padding: 23px 28px 21px 28px;
+  border: 7px solid transparent;
+  border-image: $border-gradient;
+  border-image-slice: 1;
+}
+
+.secondary-offer h3 {
+  margin: 0 0 6px 0;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.secondary-offer p {
+  margin: 0 0 20px 0;
+  flex-grow: 1;
+}
+
+.secondary-offer a {
+  position: relative;
+  margin: 0 0 0 -10px;
+  padding: 10px;
+  width: max-content;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: $color-resolution-blue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 1px;
+    background-color: $color-resolution-blue;
+  }
+}
+
