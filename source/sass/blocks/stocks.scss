@@ -6,10 +6,14 @@
   @include vp-1199 {
     padding: 92px 0 50px 0;
   }
+
+  @include vp-767 {
+    padding: 64px 0 40px 0;
+  }
 }
 
 .stocks__wrapper h2 {
-  margin: 0 4px 34px 0;
+  margin: 0 0 34px 0;
   font-family: $ff-alumni-sans;
   font-weight: 600;
   font-size: 54px;
@@ -23,19 +27,29 @@
     line-height: 50.4px;
     letter-spacing: 1.3px;
   }
+
+  @include vp-767 {
+    margin: 0 5px 42px 0;
+    font-size: 32px;
+    line-height: 38.4px;
+    letter-spacing: 1px;
+  }
 }
 
 .stocks__wrapper ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 38px 37px;
-  margin: 0 0 0 -2px;
+  gap: 40px;
+  margin: 0;
   padding: 0;
   list-style-type: none;
 
   @include vp-1199 {
-    margin: 0;
     gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -70,6 +84,17 @@
     grid-row: 1/2;
     grid-template-columns: 1fr auto;
   }
+
+  @media (min-width: 880px) and (max-width: 1199px) {
+    grid-template-columns: 52% 48%;
+  }
+
+  @include vp-767 {
+    @include vp-1199 {
+      grid-column: 1/2;
+      grid-template-columns: 1fr;
+    }
+  }
 }
 
 .stocks__main-offer-content-wrapper {
@@ -78,6 +103,10 @@
   padding: 34px 45px 37px 45px;
   background-color: $color-torch-red;
   color: $color-default-white;
+
+  @include vp-767 {
+    text-align: center;
+  }
 }
 
 .stocks__main-offer-content-wrapper h3 {
@@ -93,6 +122,10 @@
   font-weight: 700;
   font-size: 70px;
   line-height: 80px;
+
+  @include vp-767 {
+    margin: -11px 0 9px 0;
+  }
 }
 
 .stocks__main-offer-content-wrapper p {
@@ -100,6 +133,10 @@
   margin: 0;
   font-size: 18px;
   line-height: 25.2px;
+
+  @include vp-767 {
+    margin: 0 0 20px 0;
+  }
 }
 
 .stocks__main-offer-content-wrapper a {
@@ -123,6 +160,10 @@
     height: 1px;
     background-color: $color-default-white;
   }
+
+  @include vp-767 {
+    margin: 0 auto;
+  }
 }
 
 .stocks__main-offer-image-wrapper img {
@@ -140,7 +181,12 @@
   border-image-slice: 1;
 
   @include vp-1199 {
-    padding: 23px 28px 20px;
+    padding: 23px 28px 20px 28px;
+  }
+
+  @include vp-767 {
+    padding: 33px 28px 30px 28px;
+    text-align: center;
   }
 }
 
@@ -149,15 +195,37 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 30px;
+
+  @include vp-767 {
+    margin: 0 0 8px 0;
+  }
 }
 
 .secondary-offer p {
-  margin: 0 0 20px 0;
   flex-grow: 1;
+  margin: 0 0 20px 0;
+
+  @include vp-1199 {
+    line-height: 23px;
+  }
+
+  @include vp-767 {
+    flex-grow: 0;
+    margin: 0 0 16px 0;
+    line-height: 22px;
+  }
+
+  @media (min-width: 340px) {
+    flex-grow: 1;
+  }
 }
 
 .secondary-offer br {
   @media (min-width: 780px) {
+    display: none;
+  }
+
+  @media (min-width: 350px) and (max-width: 767px) {
     display: none;
   }
 }
@@ -183,5 +251,8 @@
     height: 1px;
     background-color: $color-resolution-blue;
   }
-}
 
+  @include vp-767 {
+    margin: 0 auto;
+  }
+}
