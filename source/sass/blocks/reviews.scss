@@ -37,6 +37,14 @@
   }
 }
 
+.reviews__swiper {
+  max-width: 560px;
+
+  @include vp-1199 {
+    max-width: 566px;
+  }
+}
+
 .reviews__list {
   margin: 0;
   padding: 0;
@@ -167,5 +175,13 @@
       right: -1px;
       background-image: url("../../img/svg/button-next-mobile.svg");
     }
+  }
+
+  @include hover {
+    opacity: 50%;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
   }
 }
