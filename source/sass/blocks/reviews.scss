@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding: 67px 0 120px 0;
   max-width: 680px;
+
+  @include vp-1199 {
+    padding: 42px 0 100px 0;
+  }
 }
 
 .reviews__wrapper h2 {
@@ -13,6 +17,13 @@
   line-height: 64.8px;
   letter-spacing: 1.7px;
   text-align: center;
+
+  @include vp-1199 {
+    margin: 0 0 39px -5px;
+    font-size: 42px;
+    line-height: 50.4px;
+    letter-spacing: 1.5px;
+  }
 }
 
 .reviews__list {
@@ -30,6 +41,11 @@
   max-width: 560px;
   background-color: $color-resolution-blue;
   color: $color-default-white;
+
+  @include vp-1199 {
+    max-width: 566px;
+    padding: 62px 65px 56px 65px;
+  }
 }
 
 .reviews__image-wrapper {
@@ -59,6 +75,10 @@
   margin: 0;
   padding: 0;
   line-height: 22.5px;
+
+  @include vp-1199 {
+    line-height: 23px;
+  }
 }
 
 .reviews__button {
@@ -70,6 +90,10 @@
   background-color: transparent;
   background-repeat: no-repeat;
   cursor: pointer;
+
+  @include vp-1199 {
+    top: 49.7%;
+  }
 
   @include vp-767 {
     top: 52.5%;

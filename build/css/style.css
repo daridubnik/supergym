@@ -3518,6 +3518,11 @@ button,
   padding: 67px 0 120px 0;
   max-width: 680px;
 }
+@media (max-width: 1199px) {
+  .reviews__wrapper {
+    padding: 42px 0 100px 0;
+  }
+}
 
 .reviews__wrapper h2 {
   margin: 0 0 37px 8px;
@@ -3527,6 +3532,14 @@ button,
   line-height: 64.8px;
   letter-spacing: 1.7px;
   text-align: center;
+}
+@media (max-width: 1199px) {
+  .reviews__wrapper h2 {
+    margin: 0 0 39px -5px;
+    font-size: 42px;
+    line-height: 50.4px;
+    letter-spacing: 1.5px;
+  }
 }
 
 .reviews__list {
@@ -3546,6 +3559,12 @@ button,
   max-width: 560px;
   background-color: #1c3374;
   color: #ffffff;
+}
+@media (max-width: 1199px) {
+  .reviews__item {
+    max-width: 566px;
+    padding: 62px 65px 56px 65px;
+  }
 }
 
 .reviews__image-wrapper {
@@ -3577,6 +3596,11 @@ button,
   padding: 0;
   line-height: 22.5px;
 }
+@media (max-width: 1199px) {
+  .reviews__content-wrapper blockquote {
+    line-height: 23px;
+  }
+}
 
 .reviews__button {
   position: absolute;
@@ -3587,6 +3611,11 @@ button,
   background-color: transparent;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+@media (max-width: 1199px) {
+  .reviews__button {
+    top: 49.7%;
+  }
 }
 @media (max-width: 767px) {
   .reviews__button {
