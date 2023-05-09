@@ -1,0 +1,48 @@
+.form {
+  max-width: 410px;
+}
+
+.form__inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.form__inputs input {
+  display: block;
+  padding: 6px 10px 6px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid $color-light-slate-grey;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: $color-default-white;
+  background-color: transparent;
+
+  @include hover-focus {
+    outline: none;
+    border-bottom: 1px solid $color-default-white;
+    text-shadow: 0 0 10px $color-default-white;
+  }
+}
+
+.form input::-moz-placeholder {
+  color: $color-default-white;
+}
+
+.form input::-webkit-input-placeholder {
+  color: $color-default-white;
+}
+
+.form button {
+  margin: 28px 0 0 0;
+  padding: 16px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: $color-default-white;
+  border: 3px solid $color-default-white;
+  background-color: transparent;
+}

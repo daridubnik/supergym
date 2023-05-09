@@ -1,0 +1,19 @@
+.free-training {
+  background-color: $color-sapphire;
+  color: $color-default-white;
+}
+
+.free-training__wrapper {
+  margin: 0 auto;
+  padding: 63px 103px 69px 103px;
+  max-width: 683px;
+}
+
+.free-training__wrapper h2 {
+  margin: 0 0 23px 0;
+  font-family: $ff-alumni-sans;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 70px;
+  letter-spacing: 1.6px;
+}
