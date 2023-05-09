@@ -1765,6 +1765,12 @@ button,
   -ms-grid-columns: (50%)[2];
   grid-template-columns: repeat(2, 50%);
 }
+@media (max-width: 1199px) {
+  .bottom-blocks {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
 
 .button {
   display: inline-block;
@@ -2076,11 +2082,21 @@ button,
   height: 1px;
   background-color: #74819c;
 }
+@media (max-width: 1199px) {
+  .contacts::after {
+    content: none;
+  }
+}
 
 .contacts__wrapper {
-  margin: 0;
-  padding: 58px 121px 58px 120px;
+  margin: 0 auto;
+  padding: 58px 121px 58px 121px;
   max-width: 683px;
+}
+@media (max-width: 1199px) {
+  .contacts__wrapper {
+    padding: 62px 90px 60px 90px;
+  }
 }
 
 .contacts__wrapper h2 {
@@ -2090,6 +2106,14 @@ button,
   font-size: 54px;
   line-height: 64.8px;
   letter-spacing: 1.5px;
+}
+@media (max-width: 1199px) {
+  .contacts__wrapper h2 {
+    margin: 0 0 32px 1px;
+    font-size: 42px;
+    line-height: 50.4px;
+    letter-spacing: 1.2px;
+  }
 }
 
 .contacts__lists {
@@ -2110,6 +2134,17 @@ button,
   height: 89%;
   background-color: #74819c;
 }
+@media (max-width: 1199px) {
+  .contacts__lists {
+    margin: 0;
+    gap: 96px;
+  }
+  .contacts__lists::before {
+    top: 8px;
+    left: 267px;
+    height: 88%;
+  }
+}
 
 .contacts__wrapper ul {
   margin: 0;
@@ -2120,6 +2155,12 @@ button,
 .contacts__wrapper li {
   margin: 0 0 17px 0;
   min-width: 170px;
+}
+@media (max-width: 1199px) {
+  .contacts__wrapper li {
+    margin: 0 0 19px 0;
+    min-width: 218px;
+  }
 }
 
 .contacts__wrapper li:last-child {
@@ -2132,9 +2173,25 @@ button,
   font-size: 16px;
   line-height: 24px;
 }
+@media (max-width: 1199px) {
+  .contacts__wrapper h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 1199px) and (max-width: 1199px) {
+  .contacts__wrapper h3 {
+    margin: 0 0 6px 0;
+  }
+}
 
 .contacts__list--right h3 {
   margin: 0 0 1px 0;
+}
+@media (max-width: 1199px) {
+  .contacts__list--right h3 {
+    margin: 0 0 6px 0;
+  }
 }
 
 .contacts__wrapper address,
@@ -2146,6 +2203,14 @@ button,
   font-size: 14px;
   line-height: 22px;
   color: #102654;
+}
+@media (max-width: 1199px) {
+  .contacts__wrapper address,
+.contacts__wrapper p,
+.contacts__wrapper a {
+    font-size: 18px;
+    line-height: 27.4px;
+  }
 }
 
 @media (hover: hover) {
@@ -2528,6 +2593,11 @@ button,
 .form {
   max-width: 410px;
 }
+@media (max-width: 1199px) {
+  .form {
+    max-width: 472px;
+  }
+}
 
 .form__inputs {
   display: -ms-grid;
@@ -2535,6 +2605,12 @@ button,
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+@media (max-width: 1199px) {
+  .form__inputs {
+    gap: 62px;
+    margin: 0 0 0 1px;
+  }
 }
 
 .form__inputs input {
@@ -2581,6 +2657,11 @@ button,
   border: 3px solid #ffffff;
   background-color: transparent;
 }
+@media (max-width: 1199px) {
+  .form button {
+    width: 100.5%;
+  }
+}
 
 .free-training {
   background-color: #102654;
@@ -2592,6 +2673,11 @@ button,
   padding: 63px 103px 69px 103px;
   max-width: 683px;
 }
+@media (max-width: 1199px) {
+  .free-training__wrapper {
+    padding: 62px 89px 69px 89px;
+  }
+}
 
 .free-training__wrapper h2 {
   margin: 0 0 23px 0;
@@ -2600,6 +2686,15 @@ button,
   font-size: 54px;
   line-height: 70px;
   letter-spacing: 1.6px;
+}
+@media (max-width: 1199px) {
+  .free-training__wrapper h2 {
+    margin: 0 0 31px 1px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50.4px;
+    letter-spacing: 1.3px;
+  }
 }
 
 .intro {
@@ -3575,7 +3670,7 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews__wrapper {
-    padding: 42px 0 100px 0;
+    padding: 42px 0 99px 0;
   }
 }
 @media (max-width: 767px) {

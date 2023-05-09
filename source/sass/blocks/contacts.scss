@@ -10,12 +10,22 @@
     height: 1px;
     background-color: $color-light-slate-grey;
   }
+
+  @include vp-1199 {
+    &::after {
+      content: none;
+    }
+  }
 }
 
 .contacts__wrapper {
-  margin: 0;
-  padding: 58px 121px 58px 120px;
+  margin: 0 auto;
+  padding: 58px 121px 58px 121px;
   max-width: 683px;
+
+  @include vp-1199 {
+    padding: 62px 90px 60px 90px;
+  }
 }
 
 .contacts__wrapper h2 {
@@ -25,6 +35,13 @@
   font-size: 54px;
   line-height: 64.8px;
   letter-spacing: 1.5px;
+
+  @include vp-1199 {
+    margin: 0 0 32px 1px;
+    font-size: 42px;
+    line-height: 50.4px;
+    letter-spacing: 1.2px;
+  }
 }
 
 .contacts__lists {
@@ -43,6 +60,17 @@
     height: 89%;
     background-color: $color-light-slate-grey;
   }
+
+  @include vp-1199 {
+    margin: 0;
+    gap: 96px;
+
+    &::before {
+      top: 8px;
+      left: 267px;
+      height: 88%;
+    }
+  }
 }
 
 .contacts__wrapper ul {
@@ -54,6 +82,11 @@
 .contacts__wrapper li {
   margin: 0 0 17px 0;
   min-width: 170px;
+
+  @include vp-1199 {
+    margin: 0 0 19px 0;
+    min-width: 218px;
+  }
 }
 
 .contacts__wrapper li:last-child {
@@ -65,10 +98,23 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
+
+  @include vp-1199 {
+    font-size: 20px;
+    line-height: 30px;
+
+    @include vp-1199 {
+      margin: 0 0 6px 0;
+    }
+  }
 }
 
 .contacts__list--right h3 {
   margin: 0 0 1px 0;
+
+  @include vp-1199 {
+    margin: 0 0 6px 0;
+  }
 }
 
 .contacts__wrapper address,
@@ -80,6 +126,11 @@
   font-size: 14px;
   line-height: 22px;
   color: $color-sapphire;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27.4px;
+  }
 }
 
 .contacts__wrapper a {

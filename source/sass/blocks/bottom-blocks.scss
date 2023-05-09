@@ -1,4 +1,8 @@
 .bottom-blocks {
   display: grid;
   grid-template-columns: repeat(2, 50%);
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+  }
 }
