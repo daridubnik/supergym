@@ -571,19 +571,21 @@
                 <li class="reviews__item swiper-slide">
                   <div class="reviews__image-wrapper">
                     <picture>
+                      <source type="image/webp" media="(max-width: 767px)"
+                        srcset="./img/content/reviews/reviews-image-mobile.webp, ./img/content/reviews/reviews-image-mobile@2x.webp 2x">
                       <source type="image/webp" media="(max-width: 1199px)"
-                        srcset="./img/content/reviews/reviews-image.webp, ./img/content/reviews/reviews-image@2x.webp 2x">
-                      <img src="./img/content/reviews/reviews-image.jpg"
-                        srcset="./img/content/reviews/reviews-image@2x.jpg 2x" width="80" height="80"
+                        srcset="./img/content/reviews/reviews-image-desktop.webp, ./img/content/reviews/reviews-image-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)"
+                        srcset="./img/content/reviews/reviews-image-mobile.jpg, ./img/content/reviews/reviews-image-mobile@2x.jpg 2x">
+                      <img src="./img/content/reviews/reviews-image-desktop.jpg"
+                        srcset="./img/content/reviews/reviews-image-desktop@2x.jpg 2x" width="80" height="80"
                         alt="Фото Анны Орловой.">
                     </picture>
                   </div>
-                  <div class="reviews__content-wrapper">
-                    <cite>Анна Орлова</cite>
-                    <blockquote>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто,
-                      тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет
-                      очередей&raquo;</blockquote>
-                  </div>
+                  <cite>Анна Орлова</cite>
+                  <blockquote>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто,
+                    тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет
+                    очередей&raquo;</blockquote>
                 </li>
               </ul>
             </div>
