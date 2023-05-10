@@ -2089,7 +2089,7 @@ button,
 }
 
 .contacts__wrapper {
-  margin: 0 auto;
+  margin: 0 auto 0 0;
   padding: 58px 121px 58px 121px;
   max-width: 683px;
 }
@@ -2101,7 +2101,7 @@ button,
 @media (max-width: 767px) {
   .contacts__wrapper {
     margin: 0;
-    padding: 64px 15px 60px 15px;
+    padding: 64px 15px 62px 15px;
     max-width: 100vw;
   }
 }
@@ -2630,6 +2630,11 @@ button,
     min-height: 114px;
   }
 }
+@media (max-width: 767px) {
+  .footer {
+    min-height: 260px;
+  }
+}
 
 .footer .container {
   padding: 0 93px;
@@ -2637,6 +2642,11 @@ button,
 @media (max-width: 1199px) {
   .footer .container {
     padding: 0 35px;
+  }
+}
+@media (max-width: 767px) {
+  .footer .container {
+    padding: 0 5px;
   }
 }
 
@@ -2659,6 +2669,19 @@ button,
 @media (max-width: 1199px) {
   .footer__wrapper {
     padding: 43px 0 38px 0;
+  }
+}
+@media (max-width: 767px) {
+  .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 4px;
+    padding: 42px 0 46px 0;
   }
 }
 
@@ -2687,6 +2710,12 @@ button,
     height: auto;
   }
 }
+@media (max-width: 767px) {
+  .footer__logo {
+    margin: 0;
+    width: 87px;
+  }
+}
 
 .footer__navigation ul {
   display: -webkit-box;
@@ -2702,6 +2731,15 @@ button,
   .footer__navigation ul {
     gap: 10px;
     margin: -4px 0 0 5px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__navigation ul {
+    display: block;
+    -webkit-columns: 2 150px;
+       -moz-columns: 2 150px;
+            columns: 2 150px;
+    margin: -40px 0 18px 0;
   }
 }
 
@@ -2738,6 +2776,18 @@ button,
 .footer__navigation li:active {
   opacity: 50%;
 }
+@media (max-width: 767px) {
+  .footer__navigation li {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__navigation li:first-child {
+    margin: 40px 0 0 0;
+  }
+}
 
 .footer__social-list {
   display: -webkit-box;
@@ -2752,6 +2802,11 @@ button,
 @media (max-width: 1199px) {
   .footer__social-list {
     margin: -3px -1px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .footer__social-list {
+    margin: 0 0 0 5px;
   }
 }
 
@@ -2879,7 +2934,7 @@ button,
 }
 
 .free-training__wrapper {
-  margin: 0 auto;
+  margin: 0 0 0 auto;
   padding: 63px 103px 69px 103px;
   max-width: 683px;
 }
