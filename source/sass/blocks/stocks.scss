@@ -166,6 +166,25 @@
   }
 }
 
+.stocks__main-offer-image-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: $color-royal-blue;
+
+  @include vp-1199 {
+    min-width: 399px;
+    min-height: 462px;
+    aspect-ratio: 399/462;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    min-width: 290px;
+    min-height: 299px;
+    aspect-ratio: auto;
+  }
+}
+
 .stocks__main-offer-image-wrapper img {
   width: 100%;
   height: 100%;
@@ -176,6 +195,7 @@
   display: flex;
   flex-direction: column;
   padding: 23px 28px 21px 28px;
+  min-height: 211px;
   border: 7px solid transparent;
   border-image: $border-gradient;
   border-image-slice: 1;
