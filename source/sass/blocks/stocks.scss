@@ -63,6 +63,8 @@
 }
 
 .stocks__wrapper a {
+  user-select: none;
+
   @include hover {
     transform: scale(1.1);
     transition: 0.3s;
@@ -100,11 +102,12 @@
 .stocks__main-offer-content-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 34px 45px 37px 45px;
+  padding: 34px 45px 36px 45px;
   background-color: $color-torch-red;
   color: $color-default-white;
 
   @include vp-767 {
+    padding: 34px 45px 37px 45px;
     text-align: center;
   }
 }
@@ -124,7 +127,7 @@
   line-height: 80px;
 
   @include vp-767 {
-    margin: -11px 0 9px 0;
+    margin: -11px 0 8px 0;
   }
 }
 
@@ -191,12 +194,12 @@
   object-fit: cover;
 }
 
-.secondary-offer {
+.stocks__secondary-offer {
   display: flex;
   flex-direction: column;
-  padding: 23px 28px 21px 28px;
+  padding: 23px 28px 20px 28px;
   min-height: 211px;
-  border: 7px solid transparent;
+  border: 7px solid;
   border-image: $border-gradient;
   border-image-slice: 1;
 
@@ -205,12 +208,12 @@
   }
 
   @include vp-767 {
-    padding: 33px 28px 30px 28px;
+    padding: 34px 28px 30px 28px;
     text-align: center;
   }
 }
 
-.secondary-offer h3 {
+.stocks__secondary-offer h3 {
   margin: 0 0 6px 0;
   font-weight: 700;
   font-size: 26px;
@@ -221,7 +224,7 @@
   }
 }
 
-.secondary-offer p {
+.stocks__secondary-offer p {
   flex-grow: 1;
   margin: 0 0 20px 0;
 
@@ -240,7 +243,7 @@
   }
 }
 
-.secondary-offer br {
+.stocks__secondary-offer br {
   @media (min-width: 780px) {
     display: none;
   }
@@ -250,7 +253,7 @@
   }
 }
 
-.secondary-offer a {
+.stocks__secondary-offer a {
   position: relative;
   margin: 0 0 0 -10px;
   padding: 10px;

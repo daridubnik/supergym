@@ -183,7 +183,7 @@
 
   &:hover,
   &:focus-within {
-    border: 7px solid transparent;
+    border: 7px solid;
     border-image: $button-buy-gradient;
     border-image-slice: 7;
     outline: 0;
