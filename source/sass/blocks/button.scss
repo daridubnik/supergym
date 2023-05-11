@@ -11,10 +11,6 @@
   border: 4px solid $color-default-white;
   user-select: none;
 
-  @include vp-767 {
-    padding: 20px 10px;
-  }
-
   @include hover {
     box-shadow: 0 0 10px 1px $color-default-white;
     text-shadow: 0 0 10px $color-default-white;
@@ -22,5 +18,9 @@
 
   &:active {
     opacity: 70%;
+  }
+
+  @include vp-767 {
+    padding: 20px 10px;
   }
 }

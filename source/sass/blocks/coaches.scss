@@ -59,7 +59,7 @@
   color: $color-default-white;
   background-color: $color-spindle;
   overflow: hidden;
-  aspect-ratio: 260/294;
+  aspect-ratio: 260/293;
 
   @include vp-1199 {
     min-width: 268px;
@@ -198,6 +198,10 @@
   background-color: transparent;
   background-repeat: no-repeat;
   cursor: pointer;
+
+  @include hover {
+    opacity: 50%;
+  }
 
   @include vp-767 {
     top: 52.5%;

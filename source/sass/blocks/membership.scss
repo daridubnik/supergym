@@ -87,18 +87,6 @@
   border: none;
   cursor: pointer;
 
-  @include vp-1199 {
-    padding: 10px 20px 13px 20px;
-    font-size: 18px;
-    line-height: 27px;
-  }
-
-  @include vp-767 {
-    padding: 10px 15px 14px 15px;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -114,6 +102,18 @@
 
   &:hover {
     color: $color-crimson;
+  }
+
+  @include vp-1199 {
+    padding: 10px 20px 13px 20px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @include vp-767 {
+    padding: 10px 15px 14px 15px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -183,7 +183,7 @@
 
   &:hover,
   &:focus-within {
-    border: 7px solid transparent;
+    border: 7px solid;
     border-image: $button-buy-gradient;
     border-image-slice: 7;
     outline: 0;
@@ -256,17 +256,20 @@
 }
 
 .membership__price span {
-  margin: 0 0 0 10px;
+  display: inline-block;
+  margin: 1px -2px 0 12px;
   font-weight: 400;
+  font-size: 58px;
   color: $color-sapphire;
 
   @include vp-767 {
-    margin: 0 0 0 7px;
+    margin: 0 -2px 0 8px;
+    font-size: 48px;
   }
 }
 
 .membership__item a {
-  margin: 37px 0 0 0;
+  margin: 36px 0 0 0;
   padding: 24px 10px;
   width: 100%;
   max-width: 204px;
@@ -275,7 +278,7 @@
   box-shadow: 0 0 0 2px $color-sapphire;
 
   @include vp-1199 {
-    margin: 36px 0 0 0;
+    margin: 35px 0 0 0;
     width: 53%;
     max-width: 100%;
   }
