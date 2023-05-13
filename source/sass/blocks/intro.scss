@@ -1,6 +1,7 @@
 .intro {
   min-height: 658px;
   background: $main-gradient-desktop;
+  background-color: $color-crimson;
   color: $color-default-white;
 
   @include vp-1199 {

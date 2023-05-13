@@ -2426,7 +2426,7 @@ button,
 }
 
 @media (max-width: 1199px) {
-  .description__text-desktop {
+  .description__text-additional {
     display: none;
   }
 }
@@ -2999,6 +2999,7 @@ button,
 .intro {
   min-height: 658px;
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  background-color: #d10a42;
   color: #ffffff;
 }
 @media (max-width: 1199px) {
@@ -3513,6 +3514,14 @@ button,
           transform: scale(1);
 }
 
+.membership__controls button.is-unavailable {
+  opacity: 20%;
+  cursor: default;
+}
+.membership__controls button.is-unavailable:hover {
+  color: rgba(16, 38, 84, 0.5);
+}
+
 .membership__lists {
   position: relative;
   z-index: 1;
@@ -3743,6 +3752,63 @@ button,
     width: 423px;
     height: 444px;
   }
+}
+
+.membership__error-massage {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 10;
+}
+@media (max-width: 1199px) {
+  .membership__error-massage {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 150px 30px;
+    width: 65%;
+  }
+}
+@media (max-width: 767px) {
+  .membership__error-massage {
+    padding: 150px 20px;
+    width: 90%;
+  }
+}
+
+.membership__error-massage p {
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+@media (max-width: 767px) {
+  .membership__error-massage p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.membership__error-massage.is-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .promo__wrapper {
