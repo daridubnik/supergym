@@ -14,7 +14,7 @@
 }
 
 .coaches__wrapper h2 {
-  margin: 0 0 48px 2px;
+  margin: 0 0 47px 2px;
   font-family: $ff-alumni-sans;
   font-weight: 600;
   font-size: 54px;
@@ -59,7 +59,7 @@
   color: $color-default-white;
   background-color: $color-spindle;
   overflow: hidden;
-  aspect-ratio: 260/293;
+  aspect-ratio: 260/294;
 
   @include vp-1199 {
     min-width: 268px;

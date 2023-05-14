@@ -62,7 +62,7 @@
 }
 
 .form button {
-  margin: 29px 0 0 0;
+  margin: 28px 0 0 0;
   padding: 16px;
   width: 100%;
   font-weight: 700;
@@ -73,12 +73,11 @@
   background-color: transparent;
 
   @include vp-1199 {
-    margin: 28px 0 0 0;
     width: 100.5%;
   }
 
   @include vp-767 {
-    margin: 38px 0 0 0;
+    margin: 37px 0 0 0;
     padding: 16px 16px 17px 16px;
     width: 100%;
   }
