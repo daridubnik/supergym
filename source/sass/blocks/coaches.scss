@@ -30,7 +30,7 @@
   }
 
   @include vp-767 {
-    margin: 0 5px 43px 0;
+    margin: 0 5px 42px 0;
     font-size: 32px;
     line-height: 38.4px;
     letter-spacing: 1px;
@@ -90,6 +90,7 @@
 
   @include vp-1199 {
     left: 51.5%;
+    max-width: 100%;
   }
 }
 

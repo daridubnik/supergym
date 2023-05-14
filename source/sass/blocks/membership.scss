@@ -135,24 +135,7 @@
 }
 
 .membership__lists {
-  position: relative;
   z-index: 1;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 15%;
-    height: 100%;
-    background-color: $color-default-white;
-  }
-
-  @include vp-1199 {
-    &::before {
-      display: none;
-    }
-  }
 }
 
 .membership__wrapper ul {
@@ -199,7 +182,7 @@
   }
 
   @include vp-767 {
-    padding: 43px 20px 49px 20px;
+    padding: 44px 20px 49px 20px;
   }
 }
 
@@ -210,7 +193,7 @@
   line-height: 39.6px;
 
   @include vp-767 {
-    margin: 0 0 10px 0;
+    margin: 0 0 9px 0;
     font-size: 22px;
     line-height: 24.23px;
   }
@@ -253,6 +236,7 @@
   }
 
   @include vp-767 {
+    margin: 0;
     font-size: 48px;
     line-height: 72px;
 
