@@ -1589,6 +1589,7 @@ button,
 
 .advantages__decoration-wrapper p {
   margin: 0;
+  min-width: 72px;
   font-weight: 700;
   font-size: 71px;
   line-height: 80px;
@@ -2450,7 +2451,7 @@ button,
   font-weight: 600;
   font-size: 92px;
   line-height: 110.4px;
-  letter-spacing: 5px;
+  letter-spacing: 4.8px;
   text-transform: uppercase;
   -webkit-text-stroke: 5px #ffffff;
 }
@@ -3279,6 +3280,7 @@ button,
   }
 
   .advantages__decoration-wrapper p {
+    min-width: 58px;
     font-size: 58px;
     line-height: 70px;
   }
