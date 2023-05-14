@@ -133,6 +133,7 @@
 
 .advantages__decoration-wrapper p {
   margin: 0;
+  min-width: 72px;
   font-weight: 700;
   font-size: 71px;
   line-height: 80px;
@@ -141,6 +142,7 @@
   background-clip: text;
 
   @include vp-1199 {
+    min-width: 58px;
     font-size: 58px;
     line-height: 70px;
   }
