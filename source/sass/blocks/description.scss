@@ -7,13 +7,13 @@
 
   @include vp-1199 {
     flex-direction: column;
-    gap: 36px;
+    gap: 11px;
     align-items: center;
     padding: 100px 0 73px 0;
   }
 
   @include vp-767 {
-    gap: 25px;
+    gap: 25.5px;
     align-items: flex-start;
     padding: 64px 0 70px 0;
   }
@@ -135,7 +135,7 @@
   }
 
   @include vp-767 {
-    margin: 0 0 41px 0;
+    margin: 0 0 40px 0;
     width: 100%;
     height: auto;
     min-height: 313px;
