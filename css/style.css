@@ -1843,12 +1843,12 @@ button,
 
 .coaches__button--prev {
   left: -57px;
-  background-image: url("../img/svg/button-prev-desktop.svg");
+  background-image: url("./../img/svg/button-prev-desktop.svg");
 }
 
 .coaches__button--next {
   right: -55px;
-  background-image: url("../img/svg/button-next-desktop.svg");
+  background-image: url("./../img/svg/button-next-desktop.svg");
 }
 
 .contacts {
@@ -2111,7 +2111,7 @@ button,
   left: 45%;
   width: 17px;
   height: 17px;
-  background-image: url("../../img/svg/triangle-desktop.svg");
+  background-image: url("./../img/svg/triangle-desktop.svg");
   background-repeat: no-repeat;
 }
 
@@ -2978,12 +2978,12 @@ button,
 
 .reviews__button--prev {
   left: 3px;
-  background-image: url("../img/svg/button-prev-desktop.svg");
+  background-image: url("./../img/svg/button-prev-desktop.svg");
 }
 
 .reviews__button--next {
   right: 4px;
-  background-image: url("../img/svg/button-next-desktop.svg");
+  background-image: url("./../img/svg/button-next-desktop.svg");
 }
 
 .stocks__wrapper {
@@ -3494,7 +3494,7 @@ button,
     left: 42%;
     width: 12px;
     height: 12px;
-    background-image: url("../img/svg/triangle-tablet.svg");
+    background-image: url("./../img/svg/triangle-tablet.svg");
   }
 
   .description__video-wrapper button::after {
@@ -4011,11 +4011,11 @@ button,
   }
 
   .coaches__button--prev {
-    background-image: url("../img/svg/button-prev-mobile.svg");
+    background-image: url("./../img/svg/button-prev-mobile.svg");
   }
 
   .coaches__button--next {
-    background-image: url("../img/svg/button-next-mobile.svg");
+    background-image: url("./../img/svg/button-next-mobile.svg");
   }
 
   .contacts__wrapper {
@@ -4431,12 +4431,12 @@ button,
   }
 
   .reviews__button--prev {
-    background-image: url("../img/svg/button-prev-mobile.svg");
+    background-image: url("./../img/svg/button-prev-mobile.svg");
   }
 
   .reviews__button--next {
     right: -1px;
-    background-image: url("../img/svg/button-next-mobile.svg");
+    background-image: url("./../img/svg/button-next-mobile.svg");
   }
 
   .stocks__wrapper {
