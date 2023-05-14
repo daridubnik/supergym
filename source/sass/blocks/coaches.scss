@@ -212,27 +212,27 @@
 
   &--prev {
     left: -57px;
-    background-image: url("../../img/svg/button-prev-desktop.svg");
+    background-image: url("./../img/svg/button-prev-desktop.svg");
 
     @include vp-1199 {
       left: -1px;
     }
 
     @include vp-767 {
-      background-image: url("../../img/svg/button-prev-mobile.svg");
+      background-image: url("./../img/svg/button-prev-mobile.svg");
     }
   }
 
   &--next {
     right: -55px;
-    background-image: url("../../img/svg/button-next-desktop.svg");
+    background-image: url("./../img/svg/button-next-desktop.svg");
 
     @include vp-1199 {
       right: 0;
     }
 
     @include vp-767 {
-      background-image: url("../../img/svg/button-next-mobile.svg");
+      background-image: url("./../img/svg/button-next-mobile.svg");
     }
   }
 }
