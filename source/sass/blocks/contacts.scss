@@ -102,7 +102,7 @@
   list-style-type: none;
 }
 
-.contacts__wrapper li {
+.contacts__item {
   margin: 0 0 17px 0;
   min-width: 170px;
 
@@ -112,7 +112,7 @@
   }
 }
 
-.contacts__wrapper li:last-child {
+.contacts__item:last-child {
   margin: 0;
 }
 
@@ -134,7 +134,7 @@
 }
 
 .contacts__list--right h3 {
-  margin: 0 0 1px 0;
+  margin: 0 0 2px 0;
 
   @include vp-1199 {
     margin: 0 0 6px 0;
@@ -168,5 +168,14 @@
 
   &:active {
     opacity: 50%;
+  }
+}
+
+.contacts__item--phone a {
+  display: block;
+  max-width: 100px;
+
+  @include vp-1199 {
+    max-width: 130px;
   }
 }

@@ -57,6 +57,7 @@
 
 .footer__logo {
   margin: 5px 0 0 0;
+  min-width: 108px;
 
   @include hover {
     opacity: 70%;
@@ -65,12 +66,14 @@
   @include vp-1199 {
     margin: -7px 0 0 0;
     width: 100px;
+    min-width: 100px;
     height: auto;
   }
 
   @include vp-767 {
     margin: 0;
     width: 87px;
+    min-width: 87px;
   }
 }
 
@@ -80,16 +83,19 @@
   gap: 20px;
   margin: -4px 0 0 4px;
   padding: 0;
+  min-width: 445px;
 
   @include vp-1199 {
     gap: 10px;
     margin: -4px 0 0 5px;
+    min-width: 405px;
   }
 
   @include vp-767 {
     display: block;
     columns: 2 150px;
     margin: -40px 0 17px 0;
+    min-width: 0;
   }
 }
 
@@ -140,13 +146,21 @@
   gap: 1px;
   margin: -7px 6px 0 0;
   padding: 0;
+  min-width: 107px;
+  max-width: 215px;
 
   @include vp-1199 {
     margin: -5px -1px 0 0;
+    max-width: 107px;
+  }
+
+  @media (min-width: 900px) {
+    max-width: 215px;
   }
 
   @include vp-767 {
     margin: -1px 0 0 5px;
+    max-width: 100%;
   }
 }
 
