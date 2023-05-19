@@ -2,8 +2,9 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {initVideoPlayer} from './modules/init-video-player';
 import {initTabs} from './modules/tabs/init-tabs';
-import {initSliderCoaches} from './modules/init-slider-coaches';
-import {initSliderReviews} from './modules/init-slider-reviews';
+import {initSliderCoaches} from './modules/sliders/init-slider-coaches';
+import {initSliderReviews} from './modules/sliders/init-slider-reviews';
+import {getSlidesTabs} from './modules/sliders/get-slides-tabs';
 
 // ---------------------------------
 
@@ -27,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initTabs();
     initSliderCoaches();
     initSliderReviews();
+    getSlidesTabs();
   });
 });
 
